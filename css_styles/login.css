@@ -1,0 +1,197 @@
+/* login.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Genel konteyner */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sol görsel bölümü */
+.left-section {
+  flex: 1;
+}
+
+.left-section .illustration {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sağ bölüm */
+.right-section {
+  flex: 1.2;
+  background-color: #1d5c89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Login kutusu */
+.login-box {
+  background: none;
+  width: 300%;
+  max-width: 840px; /* Genişlik kontrolü */
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  font-size: 34px;
+  color: #cce0f0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #dbefff;
+}
+
+/* Input alanları */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+/* Giriş butonu */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #003d66;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #005b99;
+}
+
+.forgot-password {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.forgot-password a {
+  color: #cceeff;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Divider çizgisi */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0;
+  color: #ccc;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+  margin: 0 10px;
+}
+
+/* Google & Apple butonları */
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.google-btn {
+  background-color: white;
+  color: #333;
+}
+
+.apple-btn {
+  background-color: black;
+  color: white;
+}
+
+.auth-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Alt yazılar */
+.tagline {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #cce0f0;
+  line-height: 1.4;
+}
+
+.register-link {
+  margin-top: 35px;
+  font-size: 13px;
+}
+
+.register-link a {
+  color: #ccefff;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Hata mesajı */
+.error-message {
+  background-color: #ffdddd;
+  color: #cc0000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}

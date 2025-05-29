@@ -1,0 +1,158 @@
+.main-content {
+  margin-left: 240px;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  background: #f9fbfe;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #1c3b72;
+}
+
+.goal-form {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  max-width: 800px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.save-btn {
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Ask Ocean */
+.ask-ocean-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #1c5b8a;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 24px;
+  cursor: pointer;
+  gap: 10px;
+  z-index: 100;
+}
+
+.ask-ocean-button img {
+  width: 28px;
+}
+
+/* Chat panel */
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 320px;
+  height: 400px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.chat-container.open {
+  display: flex;
+}
+
+.chat-header {
+  background: #1c5b8a;
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.chat-input button {
+  margin-left: 8px;
+  background: #1c5b8a;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.suggest-btn {
+  background-color: #fcb900;
+  color: #1c1c1c;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 12px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.suggest-btn:hover {
+  background-color: #f5a100;
+}
+

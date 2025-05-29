@@ -1,0 +1,111 @@
+.main-content {
+  margin-left: 240px;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fc;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #1c3b72;
+}
+
+.user-table {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.user-table th {
+  background: #f0f4f8;
+  color: #1c3b72;
+}
+
+/* Ask OCEAN */
+.ask-ocean-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #1c5b8a;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 24px;
+  cursor: pointer;
+  gap: 10px;
+  z-index: 100;
+}
+
+.ask-ocean-button img {
+  width: 28px;
+}
+
+/* Chat */
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 320px;
+  height: 400px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.chat-container.open {
+  display: flex;
+}
+
+.chat-header {
+  background: #1c5b8a;
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.chat-input button {
+  margin-left: 8px;
+  background: #1c5b8a;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,71 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  margin-left: 220px; /* Sidebar genişliği kadar */
+  padding: 40px;
+}
+
+.settings-container {
+  max-width: 600px;
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.settings-container h2 {
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 25px;
+  font-size: 14px;
+  background-color: #fefefe;
+  box-sizing: border-box;
+  transition: border 0.2s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #1c5b8a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #174a71;
+}

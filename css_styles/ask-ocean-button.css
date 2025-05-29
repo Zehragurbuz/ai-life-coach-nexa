@@ -1,0 +1,17 @@
+.ask-ocean-button {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/ocean-icon.png');
+    background-size: contain;  /* görselin tamamını göster */
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 6px;  /* istersen 0 yaparız: tamamen kutu */
+    cursor: pointer;
+    z-index: 1000;
+    background-color: transparent;
+    text-indent: -9999px;
+  }

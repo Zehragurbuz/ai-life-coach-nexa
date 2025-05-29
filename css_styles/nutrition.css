@@ -1,0 +1,124 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 30px;
+}
+
+/* 🌱 Suggestions + 🔥 Goal */
+.nutrition-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.suggestion-box,
+.calorie-goal-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  flex: 1 1 300px;
+}
+
+.suggestion-box h4,
+.calorie-goal-box h4 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.suggestion-box ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.suggestion-box li::before {
+  content: "✔️ ";
+  margin-right: 6px;
+  color: green;
+}
+
+.calorie-goal-box p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0 0;
+}
+
+.calorie-goal-box strong {
+  color: #2e7d32;
+}
+
+/* 🍽️ Yemek Kartları */
+.nutrition-cards.no-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.nutrition-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  padding: 22px;
+  transition: transform 0.3s ease;
+}
+
+.nutrition-card:hover {
+  transform: translateY(-4px);
+}
+
+.nutrition-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.meal-date {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.nutrition-content h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #222;
+}
+
+.nutrition-content p {
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+}
+
+/* Makrolar */
+.macros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.macros span {
+  background-color: #f1f3f5;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* 📱 Responsive (mobilde 1 sütun) */
+@media (max-width: 768px) {
+  .nutrition-cards.no-image {
+    grid-template-columns: 1fr;
+  }
+}

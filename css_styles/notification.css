@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f4f8;
+    margin: 0;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Bildirim kartlarını içeren alan */
+.notification-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Her bir bildirim kartı */
+.notification-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-left: 6px solid #2196f3;
+    border-radius: 14px;
+    padding: 22px 26px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Okunmamış vurgusu */
+.notification-card.unread {
+    border-left-color: #ff9800;
+    background-color: #fffdf3;
+}
+
+/* Bildirim başlığı */
+.notification-card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Bildirim açıklaması */
+.notification-card p {
+    margin: 0;
+    font-size: 16px;
+    color: #444;
+}
+
+/* Tarih etiketi */
+.timestamp {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Sol içerik bölümü */
+.notification-content {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+/* Sağ buton bölümü */
+.notification-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    margin-left: 20px;
+}
+
+/* "Mark as Read" butonu */
+.mark-btn {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.mark-btn:hover {
+    background-color: #1976d2;
+}
+
+/* Silme butonu (çöp kutusu) */
+.delete-btn {
+    background: transparent;
+    border: none;
+    color: #e53935;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-btn:hover {
+    color: #b71c1c;
+}
+
+/* Tümünü okundu yap butonu */
+.mark-read-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 16px;
+}
+
+.mark-read-btn:hover {
+    background-color: #388e3c;
+}
